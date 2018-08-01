@@ -1,0 +1,128 @@
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ color:#666;
+ line-height: 1.5em;
+ margin: 0px;
+ background-color:#666;
+ /* background-image: url("../images/paper_background.jpg") no-repeat center center fixed; */
+}
+.pattern{
+    background: 
+    linear-gradient(63deg, #ccc 27%, transparent 3%) 7px 0, 
+    linear-gradient(63deg, transparent 4%, #ccc 48%), 
+    linear-gradient(63deg, transparent 4%, #ccc 38%, #ccc 8%, transparent 6%), 
+    #4444443d;
+background-size: 26px 360px;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    background-color:#fff;
+    margin-bottom: 20px;
+}
+nav {
+    width:960px;
+    max-width:960px;
+    margin: 0 auto;
+}
+
+main {
+
+    background-color:#fff;
+    width:960px;
+    max-width:960px;
+    margin: 0 auto;  
+    border: 1px solid #ccc;  
+    min-height: calc(100vh - 40px);
+}
+
+section {
+    padding-top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+    display:inline-block;
+    vertical-align: top;
+    border-top: 2px solid #ccc;
+}
+
+article {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+
+footer{
+    background-color:#666;
+    border-top: 4px solid #4eaaa4;
+    padding-top:20px;
+}
+
+h1 {
+    padding: 20px;
+    color: #4eaaa4;
+    margin: 0px;
+}
+
+h1.myname {
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+    background-color: #4eaaa4;
+    color:#fff;
+    border: 0px none #ccc;
+}
+
+a:link {
+color:#ccc;
+text-decoration: none;
+}
+
+a:active, a:hover , a:visited {
+    color:#4eaaa4;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+img {
+    max-width:100%;
+    height:auto;
+    margin-right:40px;
+}
+
+
+ul {
+    float:right;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
