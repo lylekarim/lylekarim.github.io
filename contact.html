@@ -3,53 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Lyle Karim</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typeplate-starter-kit/3.0.1/css/typeplate.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet"  href="assets/css/style.css">
+   
+    <title>Lyle Karim </title>
 </head>
 <body>
-    <div class="container">
-<header>
-<nav>
-        <h1 class="myname">Lyle Karim</h1> 
-        <ul>
-               <li><a href="index.html">About</a></li> |
-                <li><a href="portfolio.html">Portfolio</a></li> |  
-                <li><a href="contact.html">Contact</a></li> 
-              </ul>
-</nav>
-</header>
-<main>
-    <h1>Contact</h1>
-  
-
-        <div class="contact-form">  
-    <form>
-        <div class="form-group">
-          <label for="exampleInputName1">Name</label>
-          <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Jane Smith">
-               </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
-        </div>
-        <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <header>
+        <!--  navbar -->
+        <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <span id="navbar-name" class="navbar-brand mb-0 h1">Lyle Karim</span>
+           
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About Me</a>
+              </li><span class="nav-item-divider">|</span>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li><span class="nav-item-divider">|</span>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </div>
-</section>
+      </header>
+         <!-- Begin page content -->
+    <main role="main" class="container">
+        <div class="row">
+             <div class="col">
+                    <h1 class="mt-5 ml-3">Contact</h1>
+                    <section>
+                            <div class="row">
+                                    <div class="col-sm-12">
+                                            <form>
+                                                    <div class="form-group">
+                                                            <label for="exampleInputName1">Name</label>
+                                                            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Jane Smith">
+                                                                 </div>
+                                                          <div class="form-group">
+                                                            <label for="exampleInputEmail1">Email</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+                                                          </div>
+                                                          <div class="form-group">
+                                                                  <label for="exampleFormControlTextarea1">Message</label>
+                                                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                                </div>
+                                                          <button type="submit" class="btn btn-primary">Submit</button>
+                                                        </form>
+                                            </div>
+                                          </div>
+                    </section>
+   
 
-</main>
-</div>
-<footer>Copyright 2018</footer>
+    </div>
+        </div>
+        </main>
 
-
-
+      <footer class="footer">
+        <div class="container">
+          &copy;Copyright 2018
+        </div>
+      </footer>
 </body>
 </html>

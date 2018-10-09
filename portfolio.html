@@ -3,69 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - Lyle Karim</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typeplate-starter-kit/3.0.1/css/typeplate.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet"  href="assets/css/style.css">
+   
+    <title>Lyle Karim </title>
 </head>
 <body>
-    <div class="container">
-<header>
-<nav>
-        <h1 class="myname">Lyle Karim</h1> 
-        <ul>
-               <li><a href="index.html">About</a></li> |
-                <li><a href="portfolio.html">Portfolio</a></li> |  
-                <li><a href="contact.html">Contact</a></li> 
-              </ul>
-</nav>
-</header>
-<main>
-    <h1>Portfolio</h1>
-       <div class="projects">
-        <div class="item">
-          <div id="projectimage1" class="item-info">
-            <h2>Project Title 1 </h2>
+    <header>
+        <!--  navbar -->
+        <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <span id="navbar-name" class="navbar-brand mb-0 h1">Lyle Karim</span>
+           
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About Me</a>
+              </li><span class="nav-item-divider">|</span>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</a>
+              </li><span class="nav-item-divider">|</span>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="item">
-          <div id="projectimage2" class="item-info">
-            <h2>Project Title 2</h2>
-          </div>
-        </div>
-        <div class="item">
-          <div id="projectimage3" class="item-info">
-            <h2>Project Title 3</h2>
-          </div>
-        </div>
-        <div class="item">
-          <div id="projectimage4" class="item-info">
-            <h2>Project Title 4</h2>
-          
-          </div>
-        </div>
-        <div class="item">
-          <div id="projectimage5" class="item-info">
-            <h2>Project Title 5</h2>
-          
-          </div>
-        </div>
-        <div class="item">
-          <div id="projectimage6" class="item-info">
-            <h2>Project Title 6</h2>
-          
-          </div>
-        </div>
-      </div>
-  
-</main>
-</div>
-</div>
-<footer>Copyright 2018</footer>
+        </nav>
+    </div>
+      </header>
+         <!-- Begin page content -->
+    <main role="main" class="container">
+        <div class="row">
+             <div class="col">
+                    <h1 class="mt-5 ml-3">Portfolio</h1>
+                    <section>
+                            <div class="row">
+                                    <div class="col-xs-4">
+                       
 
+                                            <div class="card" style="width: 24rem;">
+                                                    <img class="card-img-top" src="assets/images/banana.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                      <h2 class="card-text">Giforama</h2>
+                                                      <p class="card-text">Tired of seeing cat gifs when you only like moose? Use Giforama to customize your gif collection.</p>
+                                                      <a href="https://lylekarim.github.io/giftastic/" target="_blank" class="btn btn-primary">Go to Giforama</a>
+                                                    </div>
+                                                  </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                            <div class="card" style="width: 24rem;">
+                                                    <img class="card-img-top" src="assets/images/orange.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                            <h2 class="card-text">Crystal Keyboards</h2>
+                                                            <p class="card-text">Thrilling game of chance- push the button, WIN. You could also push the button and lose.</p>
+                                                            <a href="https://lylekarim.github.io/unit-4-game/" target="_blank" class="btn btn-primary">I'm feeling lucky</a>
+                                                    </div>
+                                                  </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col-xs-4">
+                                                <div class="card" style="width: 24rem;">
+                                                        <img class="card-img-top" src="assets/images/terracotta.png" alt="Card image cap">
+                                                        <div class="card-body">
+                                                                <h2 class="card-text">For the Birds Quiz</h2>
+                                                                <p class="card-text">Test your bird knowledge against the clock. High pressure fun!</p>
+                                                                <a href="https://lylekarim.github.io/trivia-game/" target="_blank" class="btn btn-primary">Take the Quiz</a>
+                                                        </div>
+                                                      </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                                <div class="card" style="width: 24rem;">
+                                                        <img class="card-img-top" src="assets/images/yellow.png" alt="Card image cap">
+                                                        <div class="card-body">
+                                                                <h2 class="card-text">Wine Cellar</h2>
+                                                                <p class="card-text">Amaze your friends with this digital wine cellar. It's on the Internet!!</p>
+                                                                <a href="https://lylekarim.github.io/wine-cellar/" target="_blank" class="btn btn-primary">Go to wine cellar</a>
+                                                        </div>
+                                                      </div>
+                                        </div>
+                                      </div>
+                                 
+                    </section>
+   
 
+    </div>
+        </div>
+        </main>
 
+      <footer class="footer">
+        <div class="container">
+          &copy;Copyright 2018
+        </div>
+      </footer>
 </body>
 </html>
