@@ -2,62 +2,250 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
- <link rel="stylesheet"  href="assets/css/style.css">
-   
-    <title>Lyle Karim </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Family: Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Website Title -->
+    <title>Lyle K.</title>
 </head>
 <body>
-    <header>
-        <!--  navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-light fixed-top">
         <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <span id="navbar-name" class="navbar-brand mb-0 h1">Lyle Karim</span>
-           
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About Me</a>
-                  </li><span class="nav-item-divider">|</span>
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li><span class="nav-item-divider">|</span>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-            </ul>
-          </div>
-        </nav>
+            <!-- Navbar Brand - Place Logo Inside the a tag -->
+            <a href="#home" class="navbar-brand font-weight-bold text-white">LyleK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <!-- Navbar Menu Items -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <!-- <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li></li> -->
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+    <div id="home" class="jumbotron jumbotron-fluid h-100vh" data-image="assets/images/cat-watching-bird.jpg">
+        <!-- Jumbotron Text Content -->
+        <div class="h-100 container d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-twilight-black text-uppercase font-weight-bold jumbotron-title orange">Lyle Karim</h1>
+            <p class="text-twilight-black text-uppercase jumbotron-subtitle">Digital Marketing Technology and 
+                Web Development
+            </p>
+            <a href="#" class="btn btn-light btn-outlined">More!</a>
+        </div>
     </div>
-      </header>
-         <!-- Begin page content -->
-    <main role="main" class="container">
-        <div class="row">
-             <div class="col">
-                    <h1 class="mt-5 ml-3">About Me</h1>
-                    <section>
-                            <img class="about-pic img-fluid float-left" src="assets/images/porfolio_pic2.png" width="255" height="296">
-                            <article>
-                                    <p class="lead">I work with cross-functional teams to provide integrated solutions between marketing efforts and CRM and CMS platforms. I love Cornell's All About Birds site because I am a bird nerd and possibly other types of nerd. That is the kind of site I would like to build.</p>
-                            </article>
-                    </section>
    
-
-    </div>
-        </div>
-        </main>
-
-      <footer class="footer">
+    <!-- About -->
+    <section id="about" class="section bg-outer-space">
         <div class="container">
-          &copy;Copyright 2018
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <!-- About Profile Image - Replace url in data-image with your image -->
+                    <div class="about-image" data-image="assets/images/porfolio_pic2.png" style="height:100px;"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header mt-4 mt-lg-0 text-lg-left text-center">
+                        <h2 class="text-uppercase font-weight-bold text-twilight-blue">About Me</h2>
+                        <p class="section-subtitle text-uppercase text-twilight-blue-50 font-weight-light">Digital Marketing Technology and Web Development</p>
+                    </div>
+                    <div class="section-content">
+                        <!-- Main About content -->
+                        <p class="text-manatee">
+                             As a marketing technology professional and full-stack web developer I work with cross-functional teams to provide integrated solutions between marketing efforts and CRM and CMS platforms. </p>
+                             <p class="text-manatee">I have experience in architecting enterprise-level digital marketing applications and am interested in similar projects.</p>
+                        </p>
+                        <div class="mt-5 d-flex align-items-center">
+                            <p class="text-uppercase font-weight-bold text-manatee">Connect With Me:</p>
+                            <!-- Social Media - Change the # in the a tag to your social media link -->
+                            <ul class="list-inline ml-4">
+                    
+                                <li class="list-inline-item h5 mb-0">
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/lylekarim"><ion-icon name="logo-github"></ion-icon></a>
+                                </li>
+                                <li class="list-inline-item h5 mb-0">
+                                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lyle-k-271ab8b2/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="text-uppercase font-weight-bold text-black">Portfolio</h2>
+              
+            </div>
+           
+            <!-- Portfolio Items -->
+            <div class="row filtr-container">
+                <!--
+                     Portfolio Item
+                     data-category - the category that corresponds to the data-filter in a filter above.
+                 -->
+               
+                <div class="col-lg-4 filtr-item" data-category="mobile-development">
+                    <div class="portfolio-item" data-tilt data-image="assets/images/burger.png">
+                        <a href="https://damp-bayou-53351.herokuapp.com/" rel="noreferrer" target="_blank" class="portfolio-item-info d-flex flex-column justify-content-center align-items-center text-twilight-blue">
+                            <h3>Burger Town </h3>
+                            <p class="portfolio-item-category text-uppercase p-3">Full-stack, self-serve burger bar. Make them, eat them.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 filtr-item" data-category="web-design">
+                        <!--
+                            data-image - the url to the image of the portfolio item.
+                         -->
+                        <div class="portfolio-item" data-tilt data-image="assets/images/f2t.png">
+                            <a target="_blank" rel="noreferrer" href="https://radiant-fortress-59044.herokuapp.com/" class="portfolio-item-info d-flex flex-column justify-content-center align-items-center text-twilight-blue">
+                                <!-- Title of the project -->
+                                <h3>Fridge2Table</h3>
+                                <!-- Category of the project -->
+                                <p class="portfolio-item-category text-uppercase p-3">The Movement that's Changing the Way We Eat. A many-to-many experience- select the ingredients you have on hand and Fridge2Table will match them to recipes you can make!</p>
+                            </a>
+                        </div>
+                    </div>
+                <div class="col-lg-4 filtr-item" data-category="branding">
+                    <div class="portfolio-item" data-tilt data-image="assets/images/tetons.png">
+                        <a href="https://github.com/lylekarim/bamazon" target="_blank" rel="noreferrer"  class="portfolio-item-info d-flex flex-column justify-content-center align-items-center text-twilight-blue">
+                            <h3>BAM!azon</h3>
+                            <p class="portfolio-item-category text-uppercase p-3">The CLI-based storefront app of your dreams! Monitor your inventory! Add new products! Simulate purchases and check totals. Must install with NodeJS to experience the majesty</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 filtr-item" data-category="web-development">
+                    <div class="portfolio-item" data-tilt data-image="assets/images/orange.png">
+                        <a href="https://lylekarim.github.io/unit-4-game/" target="_blank" rel="noreferrer" class="portfolio-item-info d-flex flex-column justify-content-center align-items-center text-twilight-blue">
+                            <h3>Crystal Keyboards</h3>
+                            <p class="portfolio-item-category text-uppercase p-3">Thrilling game of chance- push the button, WIN. You could also push the button and lose.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 filtr-item" data-category="web-design">
+                    <div class="portfolio-item" data-tilt data-image="assets/images/yellow.png">
+                        <a href="https://lylekarim.github.io/wine-cellar/" target="_blank" rel="noreferrer" class="portfolio-item-info d-flex flex-column justify-content-center align-items-center text-twilight-blue">
+                            <h3>Wine Cellar</h3>
+                            <p class="portfolio-item-category text-uppercase p-3">Amaze your friends with this digital wine cellar. It's on the Internet!!.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 filtr-item" data-category="photography">
+                    <div class="portfolio-item" data-tilt data-image="assets/images/teengirlsquad.png">
+                        <a href="https://github.com/lylekarim/friendfinder" class="portfolio-item-info d-flex flex-column justify-content-center align-items-center text-twilight-blue">
+                            <h3>Friend Finder</h3>
+                            <p class="portfolio-item-category text-uppercase p-3">Address that friend-less feeling! Take a quick survey and let the Friend Finder match you with a friend based on your compatibility score.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+    <!-- Testimonials -->
+   
+    <!-- Contact -->
+    <section id="contact" class="section bg-outer-space">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="text-uppercase font-weight-bold text-twilight-blue">Contact Me</h2>
+           
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Contact Form -->
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <textarea rows="6" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <button class="btn btn-light btn-outlined">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 offset-lg-2">
+                    <!-- Your Contact Information -->
+                    <ul class="list-unstyled mt-4 mt-lg-0">
+                        <li class="d-flex align-items-center">
+                            <ion-icon name="mail" class="text-primary h5 mb-0"></ion-icon>
+                            <span class="text-twilight-blue ml-4">lylekarim+portfolio@gmail.com</span>
+                        </li>
+                        <li class="d-flex align-items-center my-5">
+                            <!-- <ion-icon name="navigate" class="text-primary h5 mb-0"></ion-icon> -->
+                           
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <!-- <ion-icon name="call" class="text-primary h5 mb-0"></ion-icon> -->
+                           
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Copyright Info, change this. -->
+                    <small>&copy; Karim 2018. All Rights Reserved.</small>
+                </div>
+                <div class="col">
+                    <!-- Social Media Links -->
+                    <ul class="list-inline float-right my-0">
+                      
+                        <li class="list-inline-item h5 mb-0">
+                            <a href="https://github.com/lylekarim"><ion-icon name="logo-github"></ion-icon></a>
+                        </li>
+                        <li class="list-inline-item h5 mb-0">
+                            <a href="https://www.linkedin.com/in/lyle-k-271ab8b2/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+    <!-- JQuery -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!-- Tilt -->
+    <script src="assets/js/vendor/tilt.js"></script>
+    <!-- Filterizr -->
+    <script src="assets/js/vendor/filterizr.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
